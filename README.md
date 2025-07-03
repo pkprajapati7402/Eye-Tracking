@@ -1,7 +1,7 @@
 # ADHD Attention Assistant
 
 ## Project Overview
-This project was developed for the hackathon theme "科技无障碍 AI" (Technology Accessibility AI). It uses computer vision and AI to help ADHD individuals maintain focus during work or study sessions.
+This project was developed for Learning Purpose (Technology Accessibility AI). It uses computer vision and AI to help ADHD individuals maintain focus during work or study sessions.
 
 ## Key Features
 
