@@ -1,13 +1,26 @@
 import streamlit as st
-import cv2
-import numpy as np
-import time
-from collections import deque
-import threading
-import queue
-import tempfile
+import sys
 import os
-from pathlib import Path
+
+try:
+    import cv2
+    import numpy as np
+    import time
+    from collections import deque
+    import threading
+    import queue
+    import tempfile
+    from pathlib import Path
+except ImportError as e:
+    st.error(f"Missing required package: {e}")
+    st.stop()
+
+# Check if OpenCV is properly configured
+try:
+    cv2.CascadeClassifier()
+except Exception as e:
+    st.error(f"OpenCV configuration error: {e}")
+    st.stop()
 
 # Configure Streamlit page
 st.set_page_config(
